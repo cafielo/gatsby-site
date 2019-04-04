@@ -30,7 +30,7 @@ const PostCard = ({ post }) => {
                 {/* {post.tags && <div className="post-card-tags"> <Tags post={post} visibility="public" autolink={false} /></div>} */}
                 {/* {post.featured && <span>Featured</span>} */}
                 <h2 className="post-card-title">{post.title}</h2>
-                <h6>Engineer</h6>
+                <h6 className="post-card-job">Engineer</h6>
             </header>
             {/* <section className="post-card-excerpt">{post.excerpt}</section> */}
             {/* <footer className="post-card-footer">
