@@ -21,6 +21,12 @@ const Index = ({ data, location, pageContext }) => {
             {console.log(posts.length)}
             <MetaData location={location} />
             <Layout isHome={true}>
+                <div className="site-banner">
+                    <h1 className="site-banner-title">Hello World</h1>
+                    <p className="site-banner-desc">Hello World Description</p>
+                    {/* <h1 className="site-banner-title">{site.title}</h1>
+                    <p className="site-banner-desc">{site.description}</p> */}
+                </div> 
                 <div className="container">
                     <section className="post-feed">
                         {posts.map(({ node }) => (
