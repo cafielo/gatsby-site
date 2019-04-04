@@ -11,9 +11,9 @@ const PostCard = ({ post }) => {
     return (
         <Link to={url} className="post-card">
 
-            <div className="post-card-image" style={{
+            {/* <div className="post-card-image" style={{
                         backgroundImage: `url(${post.feature_image})`
-                    }}></div>
+                    }}></div> */}
             {/* <h2 className="post-card-title">{post.title}</h2> */}
 
             {/* <header className="post-card-header">
@@ -22,17 +22,18 @@ const PostCard = ({ post }) => {
                     }}></div>
             </header> */}
 
-            {/* <header className="post-card-header">
+            <header className="post-card-header">
                 {post.feature_image &&
                     <div className="post-card-image" style={{
                         backgroundImage: `url(${post.feature_image})` ,
                     }}></div>}
-                {post.tags && <div className="post-card-tags"> <Tags post={post} visibility="public" autolink={false} /></div>}
-                {post.featured && <span>Featured</span>}
+                {/* {post.tags && <div className="post-card-tags"> <Tags post={post} visibility="public" autolink={false} /></div>} */}
+                {/* {post.featured && <span>Featured</span>} */}
                 <h2 className="post-card-title">{post.title}</h2>
+                <h6>Engineer</h6>
             </header>
-            <section className="post-card-excerpt">{post.excerpt}</section>
-            <footer className="post-card-footer">
+            {/* <section className="post-card-excerpt">{post.excerpt}</section> */}
+            {/* <footer className="post-card-footer">
                  <div className="post-card-footer-left">
                      <div className="post-card-avatar">
                         {post.primary_author.profile_image ?
