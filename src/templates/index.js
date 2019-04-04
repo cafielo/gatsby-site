@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
 
-import { Layout, PostCard, Pagination } from '../components/common'
+import { Layout, PostCard, Pagination, MyCard } from '../components/common'
 import { MetaData } from '../components/common/meta'
 
 /**
@@ -18,6 +18,7 @@ const Index = ({ data, location, pageContext }) => {
 
     return (
         <>
+            {console.log(posts.length)}
             <MetaData location={location} />
             <Layout isHome={true}>
                 <div className="container">
